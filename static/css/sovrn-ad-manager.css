@@ -1,0 +1,61 @@
+#preview-bar {
+  display: none;
+}
+
+.sovrn-ad {
+  display: block;
+  text-align: center;
+  z-index: 10;
+}
+.sovrn-ad .sovrn-ad-inner {
+  display: inline-block;
+  position: relative;
+}
+.sovrn-ad .sovrn-ad-close-button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(204, 204, 204, 0.8);
+  color: #666;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 3px 6px 4px;
+  position: absolute;
+  right: 4px;
+  text-align: center;
+  text-decoration: none;
+  top: 4px;
+}
+.sovrn-ad .sovrn-ad-close-button:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.sovrn-ad-fixed {
+  display: block;
+  position: fixed;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-top {
+  top: 10px;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-right {
+  right: 10px;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-bottom {
+  bottom: 10px;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-left {
+  left: 10px;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-right.sovrn-ad-fixed-center, .sovrn-ad-fixed.sovrn-ad-fixed-left.sovrn-ad-fixed-center {
+  margin-top: -25px;
+  top: 50%;
+}
+.sovrn-ad-fixed.sovrn-ad-fixed-top.sovrn-ad-fixed-center, .sovrn-ad-fixed.sovrn-ad-fixed-bottom.sovrn-ad-fixed-center {
+  left: 50%;
+  margin-left: -160px;
+}

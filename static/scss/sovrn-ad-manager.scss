@@ -1,0 +1,80 @@
+@import 'compass/css3';
+
+$width: 320px;
+$height: 50px;
+$fixed-inset: 10px;
+$close-button-size: 14px;
+
+#preview-bar {
+    display: none;
+}
+
+
+.sovrn-ad {
+    .sovrn-ad-inner {
+        display: inline-block;
+        position: relative;
+    }
+
+    display: block;
+    text-align: center;
+    z-index: 10;
+
+    .sovrn-ad-close-button {
+        @include border-radius(2px);
+        background-color: transparentize(#ccc, 0.2);
+        color: #666;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 100%;
+        padding: 3px 6px 4px;
+        position: absolute;
+        right: 4px;
+        text-align: center;
+        text-decoration: none;
+        top: 4px;
+
+        &:hover {
+            color: #666;
+            text-decoration: none;
+        }
+    }
+}
+
+.sovrn-ad-fixed {
+    display: block;
+    position: fixed;
+
+    &.sovrn-ad-fixed-top {
+        top: $fixed-inset;
+    }
+
+    &.sovrn-ad-fixed-right {
+        right: $fixed-inset;
+    }
+
+    &.sovrn-ad-fixed-bottom {
+        bottom: $fixed-inset;
+    }
+
+    &.sovrn-ad-fixed-left {
+        left: $fixed-inset;
+    }
+
+    &.sovrn-ad-fixed-right,
+    &.sovrn-ad-fixed-left {
+        &.sovrn-ad-fixed-center {
+            margin-top: -1 * ($height/2);
+            top: 50%;
+        }
+    }
+
+    &.sovrn-ad-fixed-top,
+    &.sovrn-ad-fixed-bottom {
+        &.sovrn-ad-fixed-center {
+            left: 50%;
+            margin-left: -1 * ($width/2);
+        }
+    }
+}
